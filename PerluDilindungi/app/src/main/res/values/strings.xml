@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Perlu Dilindungi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_nav_1_text">News</string>
+    <string name="bottom_nav_2_text">Lokasi Vaksin</string>
+    <string name="bottom_nav_3_text">Bookmark</string>
+    <string name="judul_fragment_berita">News COVID-19</string>
+    <string name="judul_fragment_lokasi">Cari Faskes</string>
+    <string name="label_pilih_provinsi">Pilih Provinsi</string>
+    <string name="label_pilih_kota">Pilih Kota</string>
+    <string name="title_activity_faskes">FaskesActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

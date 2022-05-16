@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/judul_faskes"
+            android:layout_width="220dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            tools:text="Faskes Nomor 1" />
+
+        <TextView
+            android:id="@+id/jenis_faskes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Puskesmas"
+            android:textAlignment="center"
+            android:gravity="end"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/alamat_faskes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        tools:text="Gedung DPR-RI, JL. Gatot Subroto, RT.1/RW.3, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270, Indonesia"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/telepon_faskes"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            tools:text="(021) 5715801" />
+
+        <TextView
+            android:id="@+id/kode_faskes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="N0001702"
+            android:textAlignment="center"
+            android:gravity="end"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</LinearLayout>

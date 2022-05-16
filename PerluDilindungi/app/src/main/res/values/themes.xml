@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PerluDilindungi" parent="Theme.AppCompat.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pl_blue</item>
+        <item name="colorPrimaryVariant">@color/pl_dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pl_pink</item>
+        <item name="colorSecondaryVariant">@color/pl_yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.SplashSreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <!-- FAB Theme -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/MaterialFAB</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeFAB</item>
+    </style>
+
+    <style name="MaterialFAB" parent="">
+        <!-- Background color -->
+        <item name="colorSecondary">@color/pl_blue</item>
+        <!-- Icon and text color -->
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="ShapeFAB" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="Theme.PerluDilindungi.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.PerluDilindungi.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.PerluDilindungi.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

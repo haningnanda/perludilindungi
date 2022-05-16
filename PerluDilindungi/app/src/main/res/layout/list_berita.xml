@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6">
+
+    <ImageView
+        android:id="@+id/thumbnail_berita"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dummy_berita" />
+
+    <TextView
+        android:id="@+id/judul_berita"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/thumbnail_berita"
+        app:layout_constraintTop_toTopOf="@+id/thumbnail_berita"
+        tools:text="Angka Kesembuhan COVID-19 Terus Meningkat hingga 4.216.328 orang" />
+
+    <TextView
+        android:id="@+id/tanggal_berita"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        app:layout_constraintEnd_toEndOf="@id/judul_berita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/judul_berita"
+        app:layout_constraintTop_toBottomOf="@id/judul_berita"
+        tools:text="6 Februari 2022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.android.perludilindungi.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_newsFragment_to_webViewNewsFragment"
+            app:destination="@id/webViewNewsFragment"
+            app:popUpTo="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lokasiVaksinFragment"
+        android:name="com.example.android.perludilindungi.lokasivaksin.LokasiVaksinFragment"
+        android:label="Lokasi Vaksin"
+        tools:layout="@layout/fragment_lokasi_vaksin">
+        <action
+            android:id="@+id/action_lokasiVaksinFragment_to_detailFaskesFragment"
+            app:destination="@id/detailFaskesFragment"
+            app:popUpTo="@id/lokasiVaksinFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFaskesFragment"
+        android:name="com.example.android.perludilindungi.faskes.DetailFaskesFragment"
+        android:label="Lokasi Vaksin"
+        tools:layout="@layout/fragment_detail_faskes">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="prov"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.android.perludilindungi.bookmark.BookmarkFragment"
+        android:label="Bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_detailFaskesFragment"
+            app:destination="@id/detailFaskesFragment"
+            app:popUpTo="@id/bookmarkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewNewsFragment"
+        android:name="com.example.android.perludilindungi.webViewNews.WebViewNewsFragment"
+        android:label="fragment_web_view_news"
+        tools:layout="@layout/fragment_web_view_news">
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </fragment>
+</navigation>
